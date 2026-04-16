@@ -13,6 +13,42 @@ private func canSubmitMatching(_ selections: [Int?]) -> Bool {
     !selections.isEmpty && selections.allSatisfy { $0 != nil }
 }
 
+// System `.bordered` / `.borderedProminent` + `.disabled` washes out label text; we set colors explicitly.
+private struct QuizPrimaryActionButtonStyle: ButtonStyle {
+    /// Filled orange when true, neutral gray when false (still readable).
+    var isActive: Bool
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.body.weight(.semibold))
+            .multilineTextAlignment(.center)
+            .foregroundStyle(isActive ? Color.white : Color(red: 0.33, green: 0.33, blue: 0.36))
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 13)
+            .background(isActive ? AWSQuizColors.orange : Color(red: 0.88, green: 0.89, blue: 0.90))
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .opacity(configuration.isPressed && isActive ? 0.9 : 1)
+    }
+}
+
+private struct QuizSecondaryActionButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.body.weight(.semibold))
+            .multilineTextAlignment(.center)
+            .foregroundStyle(Color(red: 0.75, green: 0.38, blue: 0)) // darker orange on white for contrast
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 13)
+            .background(AWSQuizColors.surface)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(AWSQuizColors.orange, lineWidth: 1.5)
+            )
+            .opacity(configuration.isPressed ? 0.92 : 1)
+    }
+}
+
 struct QuizView: View {
     /// `nil` means include every question.
     var moduleFilter: String?
@@ -295,20 +331,19 @@ private struct ChoiceQuestionContent: View {
             }
 
             HStack(spacing: 12) {
-                Button("Check answer") {
-                    revealed = true
+                let canCheck = canSubmitChoice(displayCorrect: displayCorrectIndices, selected: selectedIndices) && !revealed
+                Button {
+                    if canCheck { revealed = true }
+                } label: {
+                    Text("Check answer")
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(AWSQuizColors.orange)
-                .disabled(!canSubmitChoice(displayCorrect: displayCorrectIndices, selected: selectedIndices) || revealed)
-                .frame(maxWidth: .infinity)
+                .buttonStyle(QuizPrimaryActionButtonStyle(isActive: canCheck))
+                .allowsHitTesting(canCheck)
 
                 Button("Next") {
                     onNext()
                 }
-                .buttonStyle(.bordered)
-                .tint(AWSQuizColors.orange)
-                .frame(maxWidth: .infinity)
+                .buttonStyle(QuizSecondaryActionButtonStyle())
             }
         }
         .task(id: shuffleKey) {
@@ -409,20 +444,19 @@ private struct MatchingQuestionContent: View {
             }
 
             HStack(spacing: 12) {
-                Button("Check answer") {
-                    revealed = true
+                let canCheck = canSubmitMatching(matchSelections) && !revealed
+                Button {
+                    if canCheck { revealed = true }
+                } label: {
+                    Text("Check answer")
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(AWSQuizColors.orange)
-                .disabled(!canSubmitMatching(matchSelections) || revealed)
-                .frame(maxWidth: .infinity)
+                .buttonStyle(QuizPrimaryActionButtonStyle(isActive: canCheck))
+                .allowsHitTesting(canCheck)
 
                 Button("Next") {
                     onNext()
                 }
-                .buttonStyle(.bordered)
-                .tint(AWSQuizColors.orange)
-                .frame(maxWidth: .infinity)
+                .buttonStyle(QuizSecondaryActionButtonStyle())
             }
         }
         .task(id: shuffleKey) {
