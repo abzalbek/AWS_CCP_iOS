@@ -357,17 +357,14 @@
     },
     {
       "id": "autoscaling-launch-locations-001",
-      "question": "In which two locations can Amazon EC2 Auto Scaling launch resources?",
+      "question": "Where can an Amazon EC2 Auto Scaling group launch instances?",
       "options": [
         "Multiple availability zones across multiple regions",
         "Only in one single availability zone",
         "Multiple availability zones within a region",
         "Everywhere, there are no constraints"
       ],
-      "correctIndices": [
-        0,
-        2
-      ],
+      "correctIndex": 2,
       "module": "Compute in the Cloud"
     },
     {
@@ -4292,6 +4289,89 @@
       ],
       "correctIndex": 0,
       "module": "Going Global"
+    },
+    {
+      "id": "well-cloud-resiliency-concept-001",
+      "question": "Which universal concept of cloud computing refers to the ability of a cloud environment to continue functioning while some portions are unavailable?",
+      "options": [
+        "Availability",
+        "Resiliency",
+        "Scalability",
+        "Performance"
+      ],
+      "correctIndex": 1,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "security-waf-web-application-firewall-001",
+      "question": "What AWS service can be used as a web application firewall?",
+      "options": [
+        "AWS CloudFront",
+        "AWS Snowball",
+        "AWS Shield",
+        "AWS WAF"
+      ],
+      "correctIndex": 3,
+      "module": "Security"
+    },
+    {
+      "id": "pricing-sla-provider-customer-requirements-001",
+      "question": "Which concept will articulate the specific requirements between the cloud user and provider as far as promised performance, uptime, and responsiveness for services?",
+      "options": [
+        "Auditability",
+        "Governance",
+        "Service level agreement (SLA)",
+        "Contract"
+      ],
+      "correctIndex": 2,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "compute-sdk-integrate-services-application-001",
+      "question": "A developer is creating a new application and wants to integrate features of AWS services directly into the application. Which AWS tool is the BEST for this purpose?",
+      "options": [
+        "AWS Command Line Interface (CLI)",
+        "AWS CodePipeline",
+        "AWS CodeDeploy",
+        "AWS Software Development Kit"
+      ],
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "databases-rds-shared-responsibility-os-001",
+      "question": "According to the AWS Shared Responsibility Model, who is responsible for managing the operating system and configuration of the Amazon RDS database instances?",
+      "options": [
+        "The customer",
+        "It is shared",
+        "AWS"
+      ],
+      "correctIndex": 2,
+      "module": "Databases"
+    },
+    {
+      "id": "databases-mysql-reduce-operating-costs-rds-001",
+      "question": "How can you reduce the operating costs for a MySQL database?",
+      "options": [
+        "By migrating the database to an Amazon RDS instance",
+        "By migrating the database to an EC2 instance",
+        "By migrating the database to an AWS Storage Gateway",
+        "By migrating the database to a Docker container"
+      ],
+      "correctIndex": 0,
+      "module": "Databases"
+    },
+    {
+      "id": "databases-redshift-data-warehouse-migration-001",
+      "question": "To save on long-term costs from pre-purchasing hardware, you want to move your company’s data warehouse system into AWS. Which AWS service would you utilize for this?",
+      "options": [
+        "DynamoDB",
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon Aurora"
+      ],
+      "correctIndex": 2,
+      "module": "Databases"
     }
   ]
 }
