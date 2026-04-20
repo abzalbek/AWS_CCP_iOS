@@ -3488,6 +3488,810 @@
       ],
       "correctIndex": 2,
       "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "pricing-savings-plans-fargate-lambda-001",
+      "question": "While reserved instances apply only to EC2, Savings Plans incorporates two additional AWS services. Select these two services.",
+      "options": [
+        "Lightsail",
+        "Elastic Beanstalk",
+        "S3",
+        "Fargate",
+        "Lambda"
+      ],
+      "correctIndices": [
+        3,
+        4
+      ],
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "pricing-quotas-availability-billing-001",
+      "question": "What AWS mechanism is used to protect the overall availability of resources within AWS and to protect users from potentially runaway billing as well?",
+      "options": [
+        "Quotas",
+        "Segments",
+        "Blocks",
+        "Constraints"
+      ],
+      "correctIndex": 0,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "networking-vpc-isolated-protected-space-001",
+      "question": "You want to logically define an isolated and protected network space within AWS to deploy services. Which AWS service would you use?",
+      "options": [
+        "AWS VPC",
+        "AWS VPN",
+        "AWS Snowball",
+        "AWS Shield"
+      ],
+      "correctIndex": 0,
+      "module": "Networking"
+    },
+    {
+      "id": "compute-paas-developers-frameworks-001",
+      "question": "Your company wants to provide easy and quick access to its developers to try applications and codes across multiple frameworks to determine what gets the best performance and scalability. Which cloud service category would you be looking to utilize?",
+      "options": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "DaaS"
+      ],
+      "correctIndex": 1,
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "well-devops-paas-service-model-001",
+      "question": "Which cloud service model is most closely associated with DevOps?",
+      "options": [
+        "PaaS",
+        "IaaS",
+        "SaaS",
+        "DaaS"
+      ],
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "well-reversibility-remove-cloud-data-001",
+      "question": "Which key concept of cloud computing enables a user to remove all systems, accounts, and data from a cloud environment and ensure they have been completely removed?",
+      "options": [
+        "Portability",
+        "Reversibility",
+        "Removability",
+        "Erasability"
+      ],
+      "correctIndex": 1,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "networking-cidr-largest-subnet-001",
+      "question": "Which CIDR block sizing will allow for the largest number of IP addresses within a subnet?",
+      "options": [
+        "/32",
+        "/28",
+        "/24",
+        "/16"
+      ],
+      "correctIndex": 3,
+      "module": "Networking"
+    },
+    {
+      "id": "pricing-lightsail-free-tier-trial-001",
+      "question": "As part of the AWS Free Tier, which service offers a user a free one-month trial of either a Linux or Windows platform?",
+      "options": [
+        "Lightsail",
+        "Inspector",
+        "GuardDuty",
+        "AppStream"
+      ],
+      "correctIndex": 0,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "pricing-dynamodb-free-tier-storage-requests-001",
+      "question": "Which of the following AWS services under the Free Tier would have limitations for both storage of data and the number of requests per month to access it?",
+      "options": [
+        "Lambda",
+        "CloudWatch",
+        "DynamoDB",
+        "Server Migration Service"
+      ],
+      "correctIndex": 2,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "networking-nacl-incorrect-statement-allow-only-001",
+      "question": "Access control list (ACLs) are security layers on the VPC that control traffic at the subnet level. Which of the following statements about ACLs is incorrect?",
+      "options": [
+        "ACLs have numbered rules that are processed in order.",
+        "Every subnet must have an ACL assigned to it.",
+        "ACLs can have different inbound and outbound rules.",
+        "ACLs are composed only of ALLOW rules."
+      ],
+      "correctIndex": 3,
+      "module": "Networking"
+    },
+    {
+      "id": "monitoring-governance-assigning-responsibilities-001",
+      "question": "Which cloud concept refers to the assigning of jobs, tasks, roles, and responsibilities and ensuring they are satisfactorily performed?",
+      "options": [
+        "Governance",
+        "Interoperability",
+        "Auditability",
+        "Maintenance"
+      ],
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "monitoring-trusted-advisor-fault-tolerance-flagged-001",
+      "question": "Which component of the AWS Trusted Advisor would you use to look for any flagged resources that are not optimally configured to minimize service interruptions?",
+      "options": [
+        "Security",
+        "Performance",
+        "Fault Tolerance",
+        "Service Limits"
+      ],
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "security-aws-cli-access-secret-key-001",
+      "question": "Which authentication method is supported by the AWS CLI to perform automation tasks on your AWS account?",
+      "options": [
+        "Access/secret key",
+        "Username/password",
+        "Security hardware token",
+        "MFA"
+      ],
+      "correctIndex": 0,
+      "module": "Security"
+    },
+    {
+      "id": "security-data-at-rest-not-api-calls-001",
+      "question": "Which of the following is not an example of data at rest and the potential security implications of it?",
+      "options": [
+        "API calls",
+        "Machine images",
+        "DynamoDB tables",
+        "S3 objects"
+      ],
+      "correctIndex": 0,
+      "module": "Security"
+    },
+    {
+      "id": "monitoring-cloudwatch-consolidate-account-001",
+      "question": "Which AWS service is utilized to consolidate monitoring and measure services for your entire account within AWS?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS WAF",
+        "AWS CloudWatch",
+        "AWS Shield"
+      ],
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "pricing-knowledge-center-faq-001",
+      "question": "Which AWS support resource is an extensive set of FAQ pages that cover all AWS services and can be a useful resource for learning about AWS services and implementation ideas?",
+      "options": [
+        "AWS Cloud Adoption Framework",
+        "Documentation",
+        "Discussion forums",
+        "Knowledge Center"
+      ],
+      "correctIndex": 3,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "security-mfa-retinal-hardware-token-001",
+      "question": "When implementing multifactor security, which two things can be used along with a password to fulfill the requirements?",
+      "options": [
+        "Retinal scan",
+        "PIN",
+        "Challenge question",
+        "Date of birth",
+        "Hardware token"
+      ],
+      "correctIndices": [
+        0,
+        4
+      ],
+      "module": "Security"
+    },
+    {
+      "id": "networking-ec2-regional-endpoint-001",
+      "question": "Which of the following is a correct service endpoint for an EC2 instance within AWS?",
+      "options": [
+        "ec2.aws.amazon.com",
+        "ec2.amazonaws.com",
+        "ec2.eu-west-2.amazonaws.com",
+        "ec2.aws.com"
+      ],
+      "correctIndex": 2,
+      "module": "Networking"
+    },
+    {
+      "id": "security-hashing-integrity-001",
+      "question": "Which security concept is the use of hashing associated with?",
+      "options": [
+        "Availability",
+        "Confidentiality",
+        "Integrity",
+        "Privacy"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "pricing-calculator-ec2-quick-advanced-001",
+      "question": "In the AWS Pricing Calculator, which AWS service offers options for both a quick estimate and an advanced estimate?",
+      "options": [
+        "EC2",
+        "Elastic Beanstalk",
+        "S3",
+        "Lightsail"
+      ],
+      "correctIndex": 0,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "well-hybrid-cloud-video-editing-onprem-001",
+      "question": "If you wanted to maintain flexibility in data processing, where the majority of your processes could be performed in a cloud environment, with other data-intensive processes such as video editing being maintained in your own data center, which cloud model would you utilize?",
+      "options": [
+        "Hybrid",
+        "Public",
+        "Private",
+        "Community"
+      ],
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "networking-security-groups-stateful-responses-001",
+      "question": "You want to restrict inbound requests to an EC2 instance, but you also want the systems to have the ability to automatically respond to those allowed requests without having to specifically allow the responses. Which AWS service would you use to accomplish this?",
+      "options": [
+        "ACLs",
+        "AWS Shield",
+        "Security groups",
+        "Subnets"
+      ],
+      "correctIndex": 2,
+      "module": "Networking"
+    },
+    {
+      "id": "well-iaas-volume-object-storage-001",
+      "question": "Which cloud service category has volume and object storage associated with it?",
+      "options": [
+        "DaaS",
+        "IaaS",
+        "SaaS",
+        "PaaS"
+      ],
+      "correctIndex": 1,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "security-saml-sso-federation-001",
+      "question": "Which standard is widely used for SSO federations and implementations?",
+      "options": [
+        "SQL",
+        "JSON",
+        "SAML",
+        "XML"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "monitoring-ssm-automation-playbooks-001",
+      "question": "Which service of the AWS Systems Manager provides playbooks to perform tasks, both those provided by AWS and ones that can be custom-written by users?",
+      "options": [
+        "Automation",
+        "OpsCenter",
+        "AWS AppConfig",
+        "Patch Manager"
+      ],
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "pricing-calculator-groups-organize-estimates-001",
+      "question": "What feature does the AWS Pricing Calculator offer for users to organize services for estimates?",
+      "options": [
+        "Units",
+        "Groups",
+        "Projects",
+        "Services"
+      ],
+      "correctIndex": 1,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "well-virtualization-add-resources-without-hardware-001",
+      "question": "In a traditional data center, if you needed to add storage beyond what you already had connected to a server, you would need to buy or move hardware to expand. What key concept of cloud computing enables resources to be added without needing to add more hardware?",
+      "options": [
+        "On-demand self-service",
+        "Metered service",
+        "Virtualization",
+        "Rapid elasticity"
+      ],
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "storage-glacier-service-quotas-buckets-001",
+      "question": "With which AWS service would you expect to see service quotas regarding number of buckets, maximum object size, or number of restore requests?",
+      "options": [
+        "S3 Glacier",
+        "EC2",
+        "EBS",
+        "S3"
+      ],
+      "correctIndex": 0,
+      "module": "Storage"
+    },
+    {
+      "id": "security-classification-sensitivity-controls-001",
+      "question": "Which process involves determining the security controls that are necessary for a piece of data based on its sensitivity and value?",
+      "options": [
+        "Labeling",
+        "Discovery",
+        "Classification",
+        "Hashing"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "pricing-trusted-advisor-lowest-plan-developer-001",
+      "question": "Which is the lowest support plan you would need to choose in order to get access to the AWS Trusted Advisor?",
+      "options": [
+        "Free",
+        "Developer",
+        "Enterprise",
+        "Business"
+      ],
+      "correctIndex": 1,
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "going-global-aws-public-deployment-model-001",
+      "question": "While AWS has the capabilities to meet many different hosting needs and models, which cloud deployment model best describes AWS as a whole?",
+      "options": [
+        "Community",
+        "Public",
+        "Private",
+        "Hybrid"
+      ],
+      "correctIndex": 1,
+      "module": "Going Global"
+    },
+    {
+      "id": "compute-ec2-shared-responsibility-aws-hardware-001",
+      "question": "With EC2, which layer belongs to AWS under the Shared Responsibility model?",
+      "options": [
+        "Hardware",
+        "Operating system",
+        "Application code",
+        "Data"
+      ],
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "monitoring-ssm-appconfig-api-tasks-resources-001",
+      "question": "Which component of the AWS Systems Manager provides an API to perform tasks against your resources throughout AWS?",
+      "options": [
+        "Inventory",
+        "Explorer",
+        "OpsCenter",
+        "AWS AppConfig"
+      ],
+      "correctIndex": 3,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "security-artifact-regulatory-certifications-001",
+      "question": "If your application utilizes or stores any type of sensitive information, you will need to comply with specific regulatory requirements. Which AWS service would provide information on AWS certifications with major governing bodies and regulations?",
+      "options": [
+        "AWS Artifact",
+        "AWS Systems Manager",
+        "AWS CloudTrail",
+        "AWS Billing Console"
+      ],
+      "correctIndex": 0,
+      "module": "Security"
+    },
+    {
+      "id": "compute-saas-no-custom-application-code-001",
+      "question": "Your company wants to save money by no longer running applications themselves or paying software developers for custom application code. Which cloud service category would you be looking at offerings for?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "DaaS",
+        "SaaS"
+      ],
+      "correctIndex": 3,
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "compute-paas-user-responsibilities-data-app-code-001",
+      "question": "With a Platform as a Service (PaaS) implementation, which two areas of responsibility lie with the cloud user?",
+      "options": [
+        "Operating system",
+        "Networking",
+        "Storage",
+        "Data",
+        "Application code"
+      ],
+      "correctIndices": [
+        3,
+        4
+      ],
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "monitoring-parameter-store-db-connections-prod-test-001",
+      "question": "If you wanted to have identical configurations across your AWS systems for database connections, but you want to have the ability to have different systems connect to different database names depending if they are production or test environments, which AWS service would be ideal to implement?",
+      "options": [
+        "Parameter Store",
+        "Automation",
+        "Distributor",
+        "AWS AppConfig"
+      ],
+      "correctIndex": 0,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "well-cloud-give-up-hardware-control-001",
+      "question": "When moving to a cloud environment, which facet of computing does an organization give up control over and responsibilities for?",
+      "options": [
+        "Hardware",
+        "Security",
+        "Data",
+        "Operations"
+      ],
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "compute-workspaces-vdi-windows-linux-001",
+      "question": "AWS offers a fully managed virtual desktop infrastructure (VDI) solution with both Windows and Linux options. Which AWS service is this?",
+      "options": [
+        "WorkSpaces",
+        "AppStream",
+        "AWS Desktop",
+        "WorkLink"
+      ],
+      "correctIndex": 0,
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "going-global-availability-zone-notation-001",
+      "question": "Which notation correctly identifies an Availability Zone within AWS?",
+      "options": [
+        "us-east-1-1",
+        "us-west-1.a",
+        "sa-east-1-a",
+        "eu-west-1a"
+      ],
+      "correctIndex": 3,
+      "module": "Going Global"
+    },
+    {
+      "id": "well-virtualization-hypervisor-resource-pool-001",
+      "question": "Which computing concept allows the provisioning of services within a large pool of resources and sharing the same hardware infrastructure via a hypervisor?",
+      "options": [
+        "Metered service",
+        "Elasticity",
+        "Virtualization",
+        "Containers"
+      ],
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "monitoring-console-dropdown-headers-two-001",
+      "question": "Select two prominent headers for drop-down menus that appear across the top of the AWS Management Console.",
+      "options": [
+        "Billing Dashboard",
+        "Cost Explorer",
+        "Regions",
+        "Automation",
+        "Services"
+      ],
+      "correctIndices": [
+        2,
+        4
+      ],
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "security-root-user-when-to-use-001",
+      "question": "For optimal security, when should a root user account be used within AWS?",
+      "options": [
+        "To approve S3 bucket creations",
+        "To use tools on the Billing Dashboard",
+        "To provision new services",
+        "To create initial admin accounts from the IAM console"
+      ],
+      "correctIndex": 3,
+      "module": "Security"
+    },
+    {
+      "id": "compute-opsworks-managed-instances-chef-puppet-001",
+      "question": "Select two managed instances that are offered as part of AWS OpsWorks.",
+      "options": [
+        "FlashCopy",
+        "Git",
+        "Chef Automate",
+        "Puppet Enterprise",
+        "Rsync"
+      ],
+      "correctIndices": [
+        2,
+        3
+      ],
+      "module": "Compute in the Cloud"
+    },
+    {
+      "id": "networking-edge-service-not-available-lightsail-001",
+      "question": "To provide optimal responsiveness for customers, AWS maintains a network of Edge locations throughout the world to provide ultra-low-latency access to data. Which AWS service is not available through Edge locations?",
+      "options": [
+        "AWS Shield",
+        "CloudFront",
+        "Route 53",
+        "Lightsail"
+      ],
+      "correctIndex": 3,
+      "module": "Networking"
+    },
+    {
+      "id": "going-global-govcloud-region-not-general-001",
+      "question": "Which AWS region is limited to specific customers and is not available for selection in general?",
+      "options": [
+        "sa-east-1",
+        "us-gov-west-1",
+        "ca-central-1",
+        "me-south-1"
+      ],
+      "correctIndex": 1,
+      "module": "Going Global"
+    },
+    {
+      "id": "pricing-ec2-reserved-instances-standard-convertible-001",
+      "question": "Select two types of reserved instances offered by AWS for EC2 services.",
+      "options": [
+        "Standard",
+        "Dynamic",
+        "Hybrid",
+        "Convertible",
+        "Flexible"
+      ],
+      "correctIndices": [
+        0,
+        3
+      ],
+      "module": "Pricing and Support"
+    },
+    {
+      "id": "security-hashing-verify-data-integrity-001",
+      "question": "Which technology is widely used to verify the integrity of data objects against a known original value for any potential alterations or corruptions?",
+      "options": [
+        "Tokenization",
+        "Obfuscation",
+        "Hashing",
+        "Anonymizing"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "security-cloudtrail-personal-use-investigation-001",
+      "question": "You suspect that one of your employees has been using your AWS services, including incurring billing charges, for personal use. Which AWS service would be the most useful to your investigation?",
+      "options": [
+        "Cost Explorer",
+        "AWS Shield",
+        "AWS CloudTrail",
+        "AWS Budgets"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "security-dlp-data-in-use-user-device-001",
+      "question": "With implementing a data loss prevention (DLP) strategy, where would you place the solution to protect data in use?",
+      "options": [
+        "Network firewalls",
+        "Storage system",
+        "User's device",
+        "Web server"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "networking-security-groups-inbound-outbound-both-001",
+      "question": "Security groups are virtual firewalls within an AWS VPC. Which of the following is true about how security groups are applied?",
+      "options": [
+        "Security groups only apply to inbound traffic.",
+        "Security groups apply to both inbound and outbound traffic.",
+        "Security groups only apply to traffic within the VPC.",
+        "Security groups only apply to outbound traffic."
+      ],
+      "correctIndex": 1,
+      "module": "Networking"
+    },
+    {
+      "id": "monitoring-cloudwatch-alarms-initiate-processes-001",
+      "question": "Which AWS tool will allow you to initiate processes as a result of events that are detected within CloudWatch and take action based on the value of the event?",
+      "options": [
+        "Alerts",
+        "Triggers",
+        "Alarms",
+        "Events"
+      ],
+      "correctIndex": 2,
+      "module": "Monitoring, Compliance and Governance in the AWS Cloud"
+    },
+    {
+      "id": "well-elasticity-expand-without-max-provisioned-001",
+      "question": "Which key concept of cloud computing allows the resources to an application to be expanded to meet increased demand of the user without having to provision for maximum capacity in advance?",
+      "options": [
+        "Elasticity",
+        "Metered service",
+        "Multitenancy",
+        "Resource pooling"
+      ],
+      "correctIndex": 0,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "well-saas-consumer-apps-icloud-onedrive-001",
+      "question": "Which cloud deployment model is associated with many popular services such as iCloud, OneDrive, and Instagram?",
+      "options": [
+        "DaaS",
+        "PaaS",
+        "IaaS",
+        "SaaS"
+      ],
+      "correctIndex": 3,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "security-https-protocol-data-in-transit-apps-001",
+      "question": "Which protocol is the most commonly used to protect data in transit with applications and services?",
+      "options": [
+        "SCP",
+        "FTP",
+        "SMTP",
+        "HTTPS"
+      ],
+      "correctIndex": 3,
+      "module": "Security"
+    },
+    {
+      "id": "going-global-germany-jurisdiction-eu-central-1-001",
+      "question": "If you were located in Germany and wanted to run an EC2 instance within your own jurisdiction, which AWS region would allow you to accomplish that?",
+      "options": [
+        "af-south-1",
+        "ge-south-1",
+        "eu-central-1",
+        "us-west-1"
+      ],
+      "correctIndex": 2,
+      "module": "Going Global"
+    },
+    {
+      "id": "security-shield-vs-waf-layer-difference-001",
+      "question": "What is the main difference between AWS Shield and AWS WAF?",
+      "options": [
+        "AWS Shield protects storage services; AWS WAF protects compute services.",
+        "AWS Shield protects at the Layer 7 content level, while AWS WAF protects at the Layer 3 and 4 network traffic levels.",
+        "AWS Shield protects at the Layer 3 and 4 network levels, while AWS WAF protects at the Layer 7 content level.",
+        "AWS Shield protects from external attacks, whereas AWS WAF protects between services within AWS."
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "security-artifact-fedramp-certifications-001",
+      "question": "As a government employee, you need to provide proof that any cloud systems you are using meet FedRAMP requirements. Where in the AWS Management Console would you look to find FedRAMP certifications?",
+      "options": [
+        "AWS CloudTrail",
+        "AWS OpsWorks",
+        "AWS Artifact",
+        "AWS Systems Manager"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "security-not-technology-protect-data-in-transit-001",
+      "question": "Which of the following is not a technology used to protect data in transit?",
+      "options": [
+        "VPN",
+        "Ipsec",
+        "S3 Encryption",
+        "HTTPS"
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "security-discovery-before-data-classification-001",
+      "question": "Prior to performing data classification, which process must first be performed?",
+      "options": [
+        "Tokenization",
+        "Discovery",
+        "Location",
+        "Identification"
+      ],
+      "correctIndex": 1,
+      "module": "Security"
+    },
+    {
+      "id": "well-multitenancy-not-shared-resource-data-001",
+      "question": "Within a cloud environment, which of the following is not a shared resource between tenants or customers?",
+      "options": [
+        "Storage",
+        "CPU",
+        "Memory",
+        "Data"
+      ],
+      "correctIndex": 3,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "well-metered-service-pay-for-what-you-use-001",
+      "question": "Which core aspect of cloud computing refers to users only paying for specific services that they use and only during the time in which they are in use?",
+      "options": [
+        "On-demand self-service",
+        "Resource pooling",
+        "Metered service",
+        "Multitenancy"
+      ],
+      "correctIndex": 2,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "security-iam-password-policy-granular-controls-001",
+      "question": "Which of the following states is true about password policies for IAM accounts?",
+      "options": [
+        "AWS has a global password policy that is enforced for all IAM accounts to meet industry best practices.",
+        "IAM accounts are free to use whatever password is desired by the account holder.",
+        "IAM password policies have granular controls and can be set based on the regulatory or corporate policies required for the account.",
+        "IAM account passwords can only be set by the root account and cannot be modified by the account itself."
+      ],
+      "correctIndex": 2,
+      "module": "Security"
+    },
+    {
+      "id": "well-on-demand-self-service-credit-card-quick-start-001",
+      "question": "Which key cloud computing characteristic enables someone to create an account with AWS and get up and running quickly after providing a credit card number?",
+      "options": [
+        "Resource pooling",
+        "On-demand self-service",
+        "Multitenancy",
+        "Broad network access"
+      ],
+      "correctIndex": 1,
+      "module": "Well-Architected Solutions"
+    },
+    {
+      "id": "going-global-availability-zone-designation-eu-south-1a-001",
+      "question": "Which of the following is a correct designation for an AWS Availability Zone?",
+      "options": [
+        "eu-south-1a",
+        "eu-south-1az2",
+        "eu-south-1-a",
+        "eu-south-1.az1"
+      ],
+      "correctIndex": 0,
+      "module": "Going Global"
     }
   ]
 }
