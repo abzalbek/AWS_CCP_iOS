@@ -60,6 +60,7 @@ struct QuizView: View {
     @State private var roundIndex = 0
     @State private var selectedIndices: Set<Int> = []
     @State private var revealed = false
+    @State private var showExitConfirmation = false
 
     private var subtitle: String {
         if let moduleFilter, !moduleFilter.isEmpty { return moduleFilter }
@@ -140,6 +141,18 @@ struct QuizView: View {
         }
         .onChange(of: moduleFilter) { _, _ in
             if questions != nil { applyFilterAndShuffle() }
+        }
+        .confirmationDialog(
+            "Leave this quiz?",
+            isPresented: $showExitConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button("Leave quiz", role: .destructive) {
+                onExitToHome()
+            }
+            Button("Stay", role: .cancel) {}
+        } message: {
+            Text("Your progress in this session will be lost.")
         }
     }
 
@@ -227,7 +240,7 @@ struct QuizView: View {
         ZStack {
             HStack {
                 Button("Home") {
-                    onExitToHome()
+                    showExitConfirmation = true
                 }
                 .buttonStyle(.plain)
                 .font(.subheadline.weight(.semibold))
